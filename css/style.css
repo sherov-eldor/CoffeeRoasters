@@ -1,7 +1,12 @@
 :root {
-    --text-color : #333;
-    --accent-color-green : #0a775f;
-    --outline-color : var(--accent-color-green);
+  --text-color: #333;
+  --accent-color-green: #0a775f;
+  --accent-color-green-80: rgb(10, 117, 94, 0.8);
+  --accent-color-green-60: rgb(10, 117, 94, 0.6);
+  --accent-color-light-brown: #c99b67;
+  --accent-color-light-brown-80: rgb(201, 155, 103, 0.8);
+  --accent-color-light-brown-60: rgb(201, 155, 103, 0.6);
+  --outline-color: var(--accent-color-green);
 }
 
 /* BLOBAL */
@@ -53,8 +58,8 @@ img {
 }
 
 *:focus {
-    outline: 2px dashed var(--outline-color);
-    outline-offset: 3px;
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 3px;
 }
 
 .button {
@@ -65,15 +70,18 @@ img {
   letter-spacing: 1px;
   border: none;
   color: #fff;
+  text-decoration: none;
   cursor: pointer;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .header-hero-wrapper {
   background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.header {
-}
 .header-container {
   display: flex;
   align-items: center;
@@ -83,6 +91,8 @@ img {
 }
 .header-logo-link {
   display: block;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 .header-logo-img {
   display: block;
@@ -92,15 +102,13 @@ img {
 }
 
 .header-logo-img:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .header-logo-img:active {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
-.nav {
-}
 .nav__list {
   display: flex;
   align-items: center;
@@ -123,15 +131,87 @@ img {
   letter-spacing: 1px;
   line-height: normal;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 .nav__link:hover {
-    color: var(--accent-color-green);
+  color: var(--accent-color-green);
 }
 
 .nav__link:active {
-    opacity: 0.6;
+  opacity: 0.6;
 }
+
+/* HERO */
+
+.hero-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero-info-wrapper {
+  width: 100%;
+  max-width: 730px;
+  padding-top: 116px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 116px;
+}
+.hero-heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000;
+  margin-bottom: 24px;
+}
+.hero-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 34px;
+}
+
+.button-green {
+  background-color: #0a775f;
+  color: #fff;
+}
+
+.button-green:hover {
+  background-color: var(--accent-color-green-80);
+}
+
+.button-green:active {
+  background-color: var(--accent-color-green-60);
+}
+
+.button-brown {
+  background-color: var(--accent-color-light-brown);
+  color: #fff;
+}
+
+.button-brown:hover {
+  background-color: var(--accent-color-light-brown-80);
+}
+
+.button-brown:active {
+  background-color: var(--accent-color-light-brown-60);
+}
+
+.hero__img {
+  width: 710px;
+  height: 596px;
+  object-fit: cover;
+}
+
+.hero__img-index {
+  height: 696px;
+}
+
+/* RETINA BG */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
