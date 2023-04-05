@@ -7,6 +7,7 @@
   --accent-color-light-brown-80: rgb(201, 155, 103, 0.8);
   --accent-color-light-brown-60: rgb(201, 155, 103, 0.6);
   --outline-color: var(--accent-color-green);
+  --light-bg: #f8f8f2;
 }
 
 /* BLOBAL */
@@ -54,6 +55,7 @@ img {
 /* MAIN CONTENT */
 
 .main-content {
+  margin-top: 20px;
   flex-grow: 1;
 }
 
@@ -201,7 +203,12 @@ img {
   background-color: var(--accent-color-light-brown-60);
 }
 
+/* .hero-img-wrapper {
+    position: relative;
+} */
+
 .hero__img {
+    display: block;
   width: 710px;
   height: 596px;
   object-fit: cover;
@@ -209,6 +216,71 @@ img {
 
 .hero__img-index {
   height: 696px;
+}
+
+/* INDEX COLLECTION  */
+
+.index-collection {
+}
+
+.index-collection-inner {
+  background-color: var(--light-bg);
+  background-image: url("../images/index-collection-bg.png");
+  /* background-repeat: no-repeat; */
+  background-position: center center;
+  background-size: contain;
+  padding: 50px 143px;
+}
+
+.index-collection-heading {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+}
+.index-collection-list {
+  padding: 0;
+}
+.index-collection-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.index-collection-img {
+  flex-shrink: 0;
+  margin-right: 117px;
+  width: 450px;
+  height: 375px;
+  object-fit: cover;
+}
+.index-collection-info {
+}
+.index-collection-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.index-collection-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.index-collection-item-reverse {
+  flex-direction: row-reverse;
+}
+
+.index-collection-item-reverse > .index-collection-img {
+    margin-left: 117px;
+    margin-right: 0;
 }
 
 /* RETINA BG */
