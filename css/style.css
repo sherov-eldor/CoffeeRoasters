@@ -81,7 +81,7 @@ img {
 .header-hero-wrapper {
   background-image: url("../images/header-bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .header-container {
@@ -208,7 +208,7 @@ img {
 } */
 
 .hero__img {
-    display: block;
+  display: block;
   width: 710px;
   height: 596px;
   object-fit: cover;
@@ -279,8 +279,73 @@ img {
 }
 
 .index-collection-item-reverse > .index-collection-img {
-    margin-left: 117px;
-    margin-right: 0;
+  margin-left: 117px;
+  margin-right: 0;
+}
+
+/* INDEX FEATURES  */
+
+.index-features {
+  margin-top: 20px;
+}
+
+.index-features-inner {
+  padding: 50px 30px;
+  /* background-color: #c99b67; */
+  background-image: url("../images/index-features-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 700px;
+}
+.index-features-heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.index-features-lead {
+  max-width: 580px;
+  margin: 0;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 80px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.index-features-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+}
+.index-features-item {
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+}
+.index-features-item-img {
+  width: 433px;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 28px;
+}
+.index-features-item-heading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+.index-features-item-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 /* RETINA BG */
@@ -293,5 +358,9 @@ img {
   only screen and (min-resolution: 2dppx) {
   .header-hero-wrapper {
     background-image: url("../images/header-bg@2x.jpg");
+  }
+
+  .index-features-inner {
+    background-image: url("../images/index-features-bg@2x.jpg");
   }
 }
