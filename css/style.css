@@ -111,6 +111,11 @@ img {
   opacity: 0.6;
 }
 
+.nav-medium-font .nav__link {
+  font-size: 16px;
+  line-height: normal;
+}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -220,8 +225,6 @@ img {
 
 /* INDEX COLLECTION  */
 
-.index-collection {
-}
 
 .index-collection-inner {
   background-color: var(--light-bg);
@@ -259,8 +262,7 @@ img {
   height: 375px;
   object-fit: cover;
 }
-.index-collection-info {
-}
+
 .index-collection-title {
   font-weight: 500;
   font-size: 48px;
@@ -431,6 +433,70 @@ img {
   outline-color: var(--accent-color-light-brown);
 }
 
+
+/* SITE FOOTER */
+
+.site-footer {
+  background-color: #f3d7b7;
+  background-image: url('../images/header-bg.jpg');
+}
+.site-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 68px;
+  padding-bottom: 68px;
+
+}
+
+.footer-logo-link {
+  display: flex;
+}
+
+.footer-logo-link::before{
+  opacity: 0.8;
+}
+
+.footer-logo-link:active{
+  opacity: 0.6;
+}
+
+.footer-logo-img {
+  flex-shrink: 0;
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.site-footer-socials-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.site-footer-socials-item:not(:last-child) {
+  margin-right: 30px;
+}
+.site-footer-socials-link {
+  display: block;
+}
+.site-footer-socials-img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  color: #333;
+  transition: color .3s ease;
+}
+
+.site-footer-socials-img:hover {
+  color: var(--accent-color-green);
+}
+
+.site-footer-socials-img:active{
+  opacity: 0.6;
+}
+
 /* RETINA BG */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -439,7 +505,7 @@ img {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .header-hero-wrapper {
+  .header-hero-wrapper, .site-footer {
     background-image: url("../images/header-bg@2x.jpg");
   }
 
@@ -449,5 +515,9 @@ img {
 
   .how-it-works-inner {
     background-image: url("../images/green-bg@2x.jpg");
+  }
+
+  .site-footer {
+    background-image: url('../images/footer-bg@2x.jpg');
   }
 }
